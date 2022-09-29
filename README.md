@@ -4,6 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+Take the following steps to prepare to run the application:
+
+1. Install dependencies `npm ci`
+1. Build the library `npm run ng -- build host-app-common --configuration development`
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
