@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
-import { FancyThingComponent } from './fancy-thing/fancy-thing.component';
+import { AppInfoComponent } from './app-info/app-info.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FancyThingComponent
+    AppInfoComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
     HeaderComponent,
-    FancyThingComponent
+    AppInfoComponent
   ]
 })
 export class MainModule { }

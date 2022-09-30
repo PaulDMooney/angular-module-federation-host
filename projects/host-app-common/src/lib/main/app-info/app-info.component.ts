@@ -3,11 +3,11 @@ import { AppInfoService } from '../app-info.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'lib-fancy-thing',
-  templateUrl: './fancy-thing.component.html',
-  styleUrls: ['./fancy-thing.component.css']
+  selector: 'lib-app-info',
+  templateUrl: './app-info.component.html',
+  styleUrls: ['./app-info.component.css']
 })
-export class FancyThingComponent implements OnInit {
+export class AppInfoComponent implements OnInit {
 
   appInfo?: string
 
