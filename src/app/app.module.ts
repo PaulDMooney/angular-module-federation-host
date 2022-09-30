@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainModule } from 'host-app-common';
+import { MainModule, AppInfoService, appInfoFactory } from 'host-app-common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,9 +13,15 @@ import { MainModule } from 'host-app-common';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MainModule
+    MainModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: AppInfoService,
+      useFactory: () => appInfoFactory('Host app')
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
