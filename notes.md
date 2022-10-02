@@ -1,0 +1,13 @@
+-> Shared component outside the remote module: Works
+-> Shared component inside the remote module: Works
+-> Shared service: Demonstrate that it's a singleton from the host: Works
+-> Something with dependencies:
+ --> What happens when the versions don't match (strictVersion=true)?
+   --- If singleton is true, then no version of the code is available to the remote
+   --- Can solve with specifying some libraries have strictVersion false
+ --> What happens when the expected interface changes?
+ --> What happens when a library is local to one service and not the other and strictVersion=true? 
+-> Shared assets?
+-> Server Side Rendering: Readme is here: https://github.com/angular-architects/module-federation-plugin/blob/main/libs/mf/README.md
+ --- Works browser side, but does not "federate" when server side rendering
+  --- try @nguniversal/common instead of @nguniversal/express-engine?
